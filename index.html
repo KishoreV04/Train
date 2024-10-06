@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden-fields{
+            display: none;
+        }
+    </style>
+    <title>Train Schedule Manager</title>
+</head>
+<body>
+    <h1> Welcome to the Train Schedule Manager.</h1>
+    <h2>Tasks</h2>
+    <ol>
+        <li>
+            <button id="addTrain" onclick="">
+                Add new Train 
+            </button>
+            <div id="trainDetails" class="hidden-fields">
+                <label for="TrainName">Enter the Train Name:</label>
+                <input type="text" id="TrainName"><br><br>
+                <label for="arrivalTime">Enter the Arrival time:</label>
+                <input type="text" id="arrivalTime"><br><br>
+                <label for="depttime">Enter thr Departure Time</label>
+                <input type="text" id="depttime"><br><br>
+                <button id="submitbtn" onclick="submitDetails()">Submit</button>
+            </div>
+        </li>
+        <li>
+            <label for="trainNo">Enter the Train Name</label>
+            <input type="text" id="trainNo">
+            <button id="search" onclick="searchTrain()">Get Train Details</button>
+          
+        </li>
+    </ol>
+    <script src="train.js"></script>
+</body>
+</html>
